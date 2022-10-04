@@ -1,1 +1,0 @@
-import{S as o,i as n,s as r,p as c,q as l,b as p,A as e,g as u}from"../../../chunks/index-c3fc5bbe.js";function f(s){let t;return{c(){t=c("this is about page")},l(a){t=l(a,"this is about page")},m(a,i){p(a,t,i)},p:e,i:e,o:e,d(a){a&&u(t)}}}class d extends o{constructor(t){super(),n(this,t,null,f,r,{})}}export{d as default};
