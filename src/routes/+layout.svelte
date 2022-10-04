@@ -31,7 +31,7 @@
 			<a
 				href="http://github.com/ganbayar13"
 				target="_blank"
-				class="block text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg px-5 py-2.5 text-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 w-full"
+				class="transition duration-300 ease-in-out block text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg px-5 py-2.5 text-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 w-full"
 			>
 				<span class="inline-flex items-center">
 					<svg
@@ -56,7 +56,7 @@
 			<a
 				href="https://fb.com/ganbayar13"
 				target="_blank"
-				class="block text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg px-5 py-2.5 text-center dark:focus:ring-[#3b5998]/55 w-full"
+				class="transition duration-300 ease-in-out  block text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg px-5 py-2.5 text-center dark:focus:ring-[#3b5998]/55 w-full"
 			>
 				<span class="inline-flex items-center">
 					<svg
@@ -81,7 +81,7 @@
 			<a
 				href="https://twitter.com/ganbayar13_"
 				target="_blank"
-				class="block text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center dark:focus:ring-[#1da1f2]/55 w-full"
+				class="transition duration-300 ease-in-out block text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center dark:focus:ring-[#1da1f2]/55 w-full"
 			>
 				<span class="inline-flex items-center">
 					<svg
