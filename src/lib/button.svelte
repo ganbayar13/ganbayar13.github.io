@@ -1,4 +1,5 @@
 <script>
+	export const ssr = true;
 	export let color = '#999999',
 		icon,
 		link = '#',
