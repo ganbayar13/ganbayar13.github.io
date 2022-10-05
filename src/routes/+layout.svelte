@@ -1,6 +1,8 @@
 <script>
 	import '../app.css';
-	import Button from '$lib/button.svelte';
+	import FacebookButton from '$lib/facebookButton.svelte';
+	import GithubButton from '$lib/githubButton.svelte';
+	import TwitterButton from '$lib/twitterButton.svelte';
 	export const ssr = false;
 </script>
 
@@ -28,33 +30,14 @@
 		<div class="w-full text-sm text-gray-500 mt-8">
 			<p>Follow me on</p>
 		</div>
-
 		<div class="w-full mt-2">
-			<Button
-				text="Github"
-				icon="github"
-				link="https://github.com/ganbayar13"
-				color="#24292F"
-				full="true"
-			/>
+			<GithubButton link="https://github.com/ganbayar13" full />
 		</div>
 		<div class="w-full mt-2">
-			<Button
-				text="Facebook"
-				icon="facebook"
-				link="https://fb.com/ganbayar13"
-				color="#3b5998"
-				full="true"
-			/>
+			<FacebookButton link="https://fb.com/ganbayar13" full />
 		</div>
 		<div class="w-full mt-2">
-			<Button
-				text="Twitter"
-				icon="twitter"
-				link="https://twitter.com/ganbayar13_"
-				color="#1da1f2"
-				full="true"
-			/>
+			<TwitterButton link="https://twitter.com/ganbayar13_" full />
 		</div>
 	</div>
 </main>

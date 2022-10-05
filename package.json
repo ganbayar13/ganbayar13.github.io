@@ -28,6 +28,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.43",
+		"cssnano": "^5.1.13",
 		"gh-pages": "^4.0.0",
 		"svelte-preprocess-import-assets": "^0.1.6"
 	}
