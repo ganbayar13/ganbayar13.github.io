@@ -7,7 +7,7 @@
 <Button
 	{link}
     {full}
-	customClass="bg-facebook hover:bg-facebook/90 focus:ring-facebook/50 dark:focus:ring-facebook/55 text-center"
+	className="bg-facebook hover:bg-facebook/90 focus:ring-facebook/50 dark:focus:ring-facebook/55 text-center"
 >
 	<svg
 		class="mr-2 -ml-1 w-4 h-4"

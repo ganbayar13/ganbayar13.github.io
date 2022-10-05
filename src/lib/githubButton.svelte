@@ -7,7 +7,7 @@
 <Button
 	{link}
     {full}
-	customClass="bg-github hover:bg-github/90 focus:ring-github/50 dark:focus:ring-github/55 text-center"
+	className="bg-github hover:bg-github/90 focus:ring-github/50 dark:focus:ring-github/55 text-center"
 >
 	<svg
 		class="mr-2 -ml-1 w-4 h-4"
