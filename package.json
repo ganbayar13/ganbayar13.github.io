@@ -14,7 +14,6 @@
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "^10.4.12",
-		"cssnano": "^5.1.13",
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
@@ -29,6 +28,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.43",
+		"cssnano": "^5.1.13",
 		"gh-pages": "^4.0.0",
 		"jspdf": "^2.5.1"
 	}
