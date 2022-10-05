@@ -1,1 +1,0 @@
-const o=!1,t=!1;function r({data:e}){return{b:"@"+e.a}}const n=Object.freeze(Object.defineProperty({__proto__:null,csr:!1,prerender:!1,load:r},Symbol.toStringTag,{value:"Module"}));export{n as _,o as c,r as l,t as p};
