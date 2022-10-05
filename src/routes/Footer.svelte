@@ -1,12 +1,13 @@
 <script>
-	let now = new Date(), year;
+	let now = new Date(),
+		year;
 	year = now.getFullYear();
 </script>
 
 <footer>
 	<div class="footer bg-black text-white p-5 text-sm">
 		<div class="sm:flex sm:justify-between">
-			<div>Copyright © {year}. Made with ❤️</div>
+			<div>Copyright © {year}. Made with <span title="love">❤️</span></div>
 			<div />
 			<div>
 				Built with <a href="https://svelte.dev/" target="_blank" class="font-bold underline"

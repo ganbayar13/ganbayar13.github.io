@@ -1,8 +1,11 @@
 <script>
 	import '../app.css';
-	import FacebookButton from '$lib/facebookButton.svelte';
-	import GithubButton from '$lib/githubButton.svelte';
-	import TwitterButton from '$lib/twitterButton.svelte';
+	import LinkedinButton from '$lib/buttons/linkedinButton.svelte';
+	import FacebookButton from '$lib/buttons/facebookButton.svelte';
+	import GithubButton from '$lib/buttons/githubButton.svelte';
+	import TwitterButton from '$lib/buttons/twitterButton.svelte';
+	import InstagramButton from '$lib/buttons/instagramButton.svelte';
+	import SteamButton from '$lib/buttons/steamButton.svelte';
 	import Footer from './Footer.svelte';
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -46,13 +49,22 @@
 			<p>Follow me on</p>
 		</div>
 		<div class="w-full mt-2">
-			<GithubButton link="https://github.com/ganbayar13" full />
+			<GithubButton link={data.social.github} full />
 		</div>
 		<div class="w-full mt-2">
-			<FacebookButton link="https://fb.com/ganbayar13" full />
+			<LinkedinButton link={data.social.linkedin} full />
 		</div>
 		<div class="w-full mt-2">
-			<TwitterButton link="https://twitter.com/ganbayar13_" full />
+			<FacebookButton link={data.social.facebook} full />
+		</div>
+		<div class="w-full mt-2">
+			<TwitterButton link={data.social.twitter} full />
+		</div>
+		<div class="w-full mt-2">
+			<InstagramButton link={data.social.instagram} full />
+		</div>
+		<div class="w-full mt-2">
+			<SteamButton link={data.social.steam} full />
 		</div>
 	</div>
 </main>
