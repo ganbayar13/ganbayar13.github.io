@@ -7,7 +7,7 @@
 <Button
 	{link}
 	{full}
-	customClass="bg-twitter hover:bg-twitter/90 focus:ring-twitter/50 dark:focus:ring-twitter/55 text-center"
+	className="bg-twitter hover:bg-twitter/90 focus:ring-twitter/50 dark:focus:ring-twitter/55 text-center"
 >
 	<svg
 		class="mr-2 -ml-1 w-4 h-4"
