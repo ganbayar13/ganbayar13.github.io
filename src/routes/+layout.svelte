@@ -11,7 +11,7 @@
 		class="card bg-white flex flex-col items-center justify-center p-4 pt-8 shadow-xl rounded-2xl w-96"
 	>
 		<div class="image mx-auto rounded-full w-32 h-32 bg-gray-200 overflow-hidden">
-			<img src="/images/me.jfif" class="object-cover w-full h-full" alt="profile" />
+			<img src="https://avatars.githubusercontent.com/u/8615067?s=128&v=4" class="object-cover w-full h-full" alt="profile" />
 		</div>
 		<div class="name text-gray-800 text-2xl font-medium mt-4">
 			<p>Ganbayar Batkhishig</p>
