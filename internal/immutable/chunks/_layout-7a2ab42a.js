@@ -1,0 +1,1 @@
+const e="ganbayar13",t="Ganbayar",o="Batkhishig",s="ganbayar13@gmail.com",n="+976 9936-7702",r={username:e,firstName:t,lastName:o,email:s,phone:n},l=!1;function c({data:a}){return{...a,...r}}const i=Object.freeze(Object.defineProperty({__proto__:null,ssr:l,load:c},Symbol.toStringTag,{value:"Module"}));export{i as _,c as l,l as s};
