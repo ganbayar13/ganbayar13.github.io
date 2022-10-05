@@ -1,10 +1,13 @@
 <script>
 	import { jsPDF } from 'jspdf';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+
 	function download() {
 		const doc = new jsPDF();
-
-		doc.text('Hello world!', 10, 10);
-		doc.save('a4.pdf');
+		doc.text(data.username, 10, 10);
+		doc.save('ganbayar.pdf');
 	}
 </script>
 
