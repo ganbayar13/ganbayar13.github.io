@@ -6,7 +6,7 @@
 	export const ssr = false;
 </script>
 
-<main class="main bg-gradient-to-b from-yellow-300 to-yellow-600 grid place-items-start sm:place-items-center h-screen p-5 sm:p-0">
+<main class="main bg-gradient-to-b from-yellow-300 to-yellow-600 grid place-items-start sm:place-items-center h-screen p-5 sm:p-0 ">
 	<div
 		class="card bg-white flex flex-col items-center justify-center p-4 pt-8 shadow-xl rounded-2xl sm:w-96 w-full"
 	>
