@@ -5,14 +5,15 @@
     "email": "ganbayar13@gmail.com",
     "gender": "male",
     "birthday": "1992-05-16",
+    "location": "Ulaanbaatar, Mongolia",
     "phone": "+976 9936-7702",
     "message": "Just a developer 🤓",
     "social": {
-        "facebook": "",
-        "github": "",
-        "linkedin": "",
-        "twitter": "",
-        "steam": "",
-        "instagram": ""
+        "facebook": "https://fb.com/ganbayar13",
+        "github": "https://github.com/ganbayar13",
+        "linkedin": "https://linkedin.com/in/ganbayar13/",
+        "twitter": "https://twitter.com/ganbayar13_",
+        "steam": "https://steamcommunity.com/id/ganbayar13/",
+        "instagram": "https://instagram.com/ganbayar13"
     }
 }
