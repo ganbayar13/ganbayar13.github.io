@@ -6,9 +6,9 @@
 	export const ssr = false;
 </script>
 
-<main class="main bg-gradient-to-b from-yellow-300 to-yellow-600 grid place-items-center h-screen">
+<main class="main bg-gradient-to-b from-yellow-300 to-yellow-600 grid place-items-start sm:place-items-center h-screen p-5 sm:p-0">
 	<div
-		class="card bg-white flex flex-col items-center justify-center p-4 pt-8 shadow-xl rounded-2xl w-96"
+		class="card bg-white flex flex-col items-center justify-center p-4 pt-8 shadow-xl rounded-2xl sm:w-96 w-full"
 	>
 		<div class="image mx-auto rounded-full w-32 h-32 bg-gray-200 overflow-hidden">
 			<img src="https://avatars.githubusercontent.com/u/8615067?s=128&v=4" class="object-cover w-full h-full" alt="profile" />
