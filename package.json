@@ -12,14 +12,17 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.43",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "^10.4.12",
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"gh-pages": "^4.0.0",
 		"postcss": "^8.4.16",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
+		"sass": "^1.55.0",
 		"svelte": "^3.44.0",
 		"svelte-preprocess": "^4.10.7",
 		"tailwindcss": "^3.1.8",
@@ -27,9 +30,10 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-static": "^1.0.0-next.43",
+		"chart.js": "^4.2.0",
 		"cssnano": "^5.1.13",
-		"gh-pages": "^4.0.0",
-		"jspdf": "^2.5.1"
+		"jspdf": "^2.5.1",
+		"moment": "^2.29.4",
+		"svelte-chartjs": "^3.1.2"
 	}
 }

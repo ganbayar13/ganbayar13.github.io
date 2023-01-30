@@ -1,10 +1,10 @@
 <script>
-	import Button from '$lib/button.svelte';
+	import SocialButton from './socialButton.svelte';
 	export let link;
 	export let full;
 </script>
 
-<Button
+<SocialButton
 	{link}
 	{full}
 	className="bg-steam hover:bg-steam/90 focus:ring-steam/50 dark:focus:ring-steam/55 text-center"
@@ -25,4 +25,4 @@
 		>
 	</span>
 	<span slot="text">Steam</span>
-</Button>
+</SocialButton>
