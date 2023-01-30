@@ -34,6 +34,7 @@
 		"cssnano": "^5.1.13",
 		"jspdf": "^2.5.1",
 		"moment": "^2.29.4",
-		"svelte-chartjs": "^3.1.2"
+		"svelte-chartjs": "^3.1.2",
+		"svelte-inview": "^3.0.2"
 	}
 }

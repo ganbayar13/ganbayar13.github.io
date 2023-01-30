@@ -1,38 +1,45 @@
 <script>
 	const items = [
 		{
-			title: 'Mirai Technologies LLC',
+			company: 'Mirai Technologies LLC',
 			startDate: '2022/01',
 			endDate: 'Today',
-			description: 'Software Engineer',
+			position: 'Software Engineer',
+			description:
+				"The company established in 2022 with the investment of Shinmei Corporation of Japan. The company's field of activity is outsourcing AI development.",
 			isCurrent: true
 		},
 		{
-			title: '2nd Community Systems LLC',
+			company: '2nd Community Systems LLC',
 			startDate: '2020/09',
 			endDate: '2021/12',
-			description: 'Software Engineer',
+			position: 'Software Engineer',
+			description:
+				'It is Mongolian outsourcing company with the investment of 2nd Community LLC of Japan.',
 			isCurrent: false
 		},
 		{
-			title: 'Ezpay LLC',
+			company: 'Ezpay LLC',
 			startDate: '2020/01',
-			endDate: '2020/6',
-			description: 'Software Engineer',
+			endDate: '2020/06',
+			position: 'Software Engineer',
+			description: 'Ezpay LLC is a company sells POS(point of sell) devices in Mongolia.',
 			isCurrent: false
 		},
 		{
-			title: 'GeniuneCPro LLC',
+			company: 'GeniuneCPro LLC',
 			startDate: '2018/09',
 			endDate: '2019/12',
-			description: 'Lead Programmer',
+			position: 'Lead Programmer',
+			description: 'The company develops software.',
 			isCurrent: false
 		},
 		{
-			title: 'Interactive Systems LLC',
+			company: 'Interactive Systems LLC',
 			startDate: '2014/06',
-			endDate: '2016/12',
-			description: 'Lead Programmer',
+			endDate: '2017/12',
+			position: 'Software Engineer',
+			description: 'The company develops embedded system.',
 			isCurrent: false
 		}
 	];
@@ -58,7 +65,7 @@
 				>
 			</span>
 			<h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">
-				{item.title}
+				{item.position} at {item.company}
 				{#if item.isCurrent}<span
 						class="bg-blue-100 text-blue-500 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3"
 						>Current</span
@@ -67,7 +74,7 @@
 			<time class="block mb-2 text-sm font-normal leading-none text-gray-400"
 				>{item.startDate} - {item.endDate}</time
 			>
-			<p class="text-base font-normal text-gray-500">
+			<p class="ext-base font-normal text-gray-500">
 				{item.description}
 			</p>
 		</li>

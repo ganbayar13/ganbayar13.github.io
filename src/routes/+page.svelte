@@ -1,4 +1,6 @@
 <script>
+	import { currentHash } from './../stores';
+	import { inview } from 'svelte-inview';
 	import LinkedinButton from '$lib/buttons/linkedinButton.svelte';
 	import FacebookButton from '$lib/buttons/facebookButton.svelte';
 	import GithubButton from '$lib/buttons/githubButton.svelte';
@@ -10,8 +12,8 @@
 	import moment from 'moment';
 	import Timeline from '../lib/Timeline.svelte';
 	import colors from 'tailwindcss/colors';
-	import { Bar } from 'svelte-chartjs';
 	import BarChart from '../lib/BarChart.svelte';
+	import Timeline2 from '../lib/Timeline2.svelte';
 	/** @type {import('./$types').PageData} */
 	export let data;
 
@@ -202,10 +204,19 @@
 	};
 
 	const age = moment().diff('1992-05-16', 'year');
+
+	const inView = (i) => currentHash.set(i);
 </script>
 
 <section id="about">
-	<h2 class="text-4xl text-black font-black uppercase">About</h2>
+	<h2
+		class="text-4xl text-black font-black uppercase"
+		use:inview
+		on:enter={() => inView(0)}
+		on:leave={() => inView(1)}
+	>
+		About
+	</h2>
 	<p class="text-justify mt-3">
 		Hey, my name is <b class="font-semibold">Ganbayar Batkhishig</b> and I use
 		<b class="font-semibold">ganbayar13</b> as my nickname across social medias. I enjoy creating things
@@ -233,7 +244,13 @@
 </section>
 
 <section id="skills" class="mt-20">
-	<h2 class="text-4xl text-black font-black uppercase">Skills</h2>
+	<h2
+		class="text-4xl text-black font-black uppercase"
+		use:inview
+		on:enter={() => inView(1)}
+	>
+		Skills
+	</h2>
 	<p class="mt-3">
 		There are some list of coding languages, frameworks and tools I know that I've used at least
 		once before.
@@ -247,31 +264,47 @@
 	<div class="mt-10">
 		<Divider text="Work experiences" />
 	</div>
-	<div class=" mt-3 p-4">
+	<div class=" mt-3 pl-3">
 		<Timeline />
 	</div>
 
 	<div class="mt-10">
-		<Divider text="Info chart" />
+		<Divider text="Infographics" />
 	</div>
 	<p class="mt-3">
 		I have worked on many projects in many companies. Based on my experience, I've rated my skills
 		below on a scale of 0-10 as a chart.
 	</p>
-	<div class="grid grid-cols-1">
-		<div><RadarChart data={skillChartData} options={skillChartOptions} /></div>
-		<p class="mt-3">
-			The chart below shows my language skills. Although my language skills are not very good, but I
-			am constantly trying to improve.
-		</p>
-		<div><BarChart data={languageChartData} options={languageChartOptions} /></div>
+	<div><RadarChart data={skillChartData} options={skillChartOptions} /></div>
+	<p class="mt-3">
+		The chart below shows my language skills. Although my language skills are not very good, but I
+		am constantly trying to improve.
+	</p>
+	<div><BarChart data={languageChartData} options={languageChartOptions} /></div>
+</section>
+
+<section id="achievements" class="mt-20">
+	<h2
+		class="text-4xl text-black font-black uppercase"
+		use:inview
+		on:enter={() => inView(2)}
+	>
+		Achievements
+	</h2>
+	<p class="mt-3">A list of my best remembered achievements</p>
+	<div class="mt-3 pl-3">
+		<Timeline2 />
 	</div>
 </section>
 
-<section id="achievements" class="mt-20">coming soon</section>
-
 <section id="contact" class="mt-20">
-	<h2 class="text-4xl text-black font-black uppercase">Contact</h2>
+	<h2
+		class="text-4xl text-black font-black uppercase"
+		use:inview
+		on:enter={() => inView(3)}
+	>
+		Contact
+	</h2>
 	<p class="text-justify mt-3">
 		Although I'm not currently looking for any new opportunities, my inbox is always open. Whether
 		you have a question or just want to say hi, I'll try my best to get back to you!

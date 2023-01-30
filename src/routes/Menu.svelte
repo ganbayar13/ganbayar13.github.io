@@ -1,5 +1,10 @@
 <script>
-	export let current = 0;
+	import { currentHash } from './../stores';
+	let current;
+
+	currentHash.subscribe((value) => {
+		current = value;
+	});
 	let items = [
 		{
 			title: 'About',
@@ -45,7 +50,7 @@
 			<a
 				href="#{item.url}"
 				class="menu-item-link"
-				class:active={current === index}
+				class:active={index === current}
 				on:click={handleAnchorClick}
 			>
 				<div>

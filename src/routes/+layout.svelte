@@ -1,8 +1,6 @@
 <script>
 	import '../app.css';
 	import Download from '../lib/download.svelte';
-
-	import Footer from './Footer.svelte';
 	import Menu from './Menu.svelte';
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -44,7 +42,7 @@
 					<hr class="border-white/20 border-dashed" />
 				</div>
 				<div class="px-10 w-full hidden md:block">
-					<Download data={data} />
+					<Download {data} />
 				</div>
 			</div>
 		</aside>
