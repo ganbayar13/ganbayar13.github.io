@@ -1,10 +1,10 @@
 <script>
-	import Button from '$lib/button.svelte';
+	import SocialButton from './socialButton.svelte';
 	export let link;
 	export let full;
 </script>
 
-<Button
+<SocialButton
 	{link}
 	{full}
 	className="bg-[#dd2a7b] bg-gradient-to-br from-[#515bd4] via-[#dd2a7b] to-[#f58529] hover:from-[#515bd4]/90 hover:via-[#dd2a7b]/90 hover:to-[#f58529]/90 hover:bg-[#dd2a7b]/90 focus:ring-[#dd2a7b]/50 dark:focus:ring-[#dd2a7b]/55 text-center"
@@ -25,4 +25,4 @@
 		>
 	</span>
 	<span slot="text">Instagram</span>
-</Button>
+</SocialButton>
