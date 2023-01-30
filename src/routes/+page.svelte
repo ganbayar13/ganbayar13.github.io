@@ -203,20 +203,17 @@
 		}
 	};
 
+	const inviewOptions = {
+		rootMargin: '-30% 0px'
+	};
+
 	const age = moment().diff('1992-05-16', 'year');
 
 	const inView = (i) => currentHash.set(i);
 </script>
 
-<section id="about">
-	<h2
-		class="text-4xl text-black font-black uppercase"
-		use:inview
-		on:enter={() => inView(0)}
-		on:leave={() => inView(1)}
-	>
-		About
-	</h2>
+<section id="about" use:inview={inviewOptions} on:enter={() => inView(0)}>
+	<h2 class="text-4xl text-black font-black uppercase">About</h2>
 	<p class="text-justify mt-3">
 		Hey, my name is <b class="font-semibold">Ganbayar Batkhishig</b> and I use
 		<b class="font-semibold">ganbayar13</b> as my nickname across social medias. I enjoy creating things
@@ -243,14 +240,8 @@
 	</div>
 </section>
 
-<section id="skills" class="mt-20">
-	<h2
-		class="text-4xl text-black font-black uppercase"
-		use:inview
-		on:enter={() => inView(1)}
-	>
-		Skills
-	</h2>
+<section id="skills" class="mt-20" use:inview={inviewOptions} on:enter={() => inView(1)}>
+	<h2 class="text-4xl text-black font-black uppercase">Skills</h2>
 	<p class="mt-3">
 		There are some list of coding languages, frameworks and tools I know that I've used at least
 		once before.
@@ -283,28 +274,16 @@
 	<div><BarChart data={languageChartData} options={languageChartOptions} /></div>
 </section>
 
-<section id="achievements" class="mt-20">
-	<h2
-		class="text-4xl text-black font-black uppercase"
-		use:inview
-		on:enter={() => inView(2)}
-	>
-		Achievements
-	</h2>
+<section id="achievements" class="mt-20" use:inview={inviewOptions} on:enter={() => inView(2)}>
+	<h2 class="text-4xl text-black font-black uppercase">Achievements</h2>
 	<p class="mt-3">A list of my best remembered achievements</p>
 	<div class="mt-3 pl-3">
 		<Timeline2 />
 	</div>
 </section>
 
-<section id="contact" class="mt-20">
-	<h2
-		class="text-4xl text-black font-black uppercase"
-		use:inview
-		on:enter={() => inView(3)}
-	>
-		Contact
-	</h2>
+<section id="contact" class="mt-20" use:inview={inviewOptions} on:enter={() => inView(3)}>
+	<h2 class="text-4xl text-black font-black uppercase">Contact</h2>
 	<p class="text-justify mt-3">
 		Although I'm not currently looking for any new opportunities, my inbox is always open. Whether
 		you have a question or just want to say hi, I'll try my best to get back to you!
