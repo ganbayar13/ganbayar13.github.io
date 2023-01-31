@@ -22,7 +22,7 @@
 			company: 'Ezpay LLC',
 			startDate: '2020/01',
 			endDate: '2020/06',
-			position: 'Software Engineer',
+			position: 'Front-end Developer',
 			description: 'Ezpay LLC is a company sells POS(point of sell) devices in Mongolia.',
 			isCurrent: false
 		},
