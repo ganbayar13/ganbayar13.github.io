@@ -17,7 +17,7 @@
 	<div class="container">
 		<aside class="side">
 			<div class="w-full flex flex-col space-y-10 md:sticky md:top-32">
-				<div class="pl-10 flex flex-col items-center space-y-2">
+				<div class="md:pl-10 flex flex-col items-center space-y-2">
 					<div class="group image rounded-full w-32 h-32 overflow-hidden border-2 border-white">
 						<img
 							src="https://avatars.githubusercontent.com/u/8615067?s=128&v=4"
