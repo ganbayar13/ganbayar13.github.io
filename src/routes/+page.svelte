@@ -198,7 +198,35 @@
 				text: 'Languages'
 			},
 			tooltip: {
-				mode: 'index'
+				mode: 'index',
+				callbacks: {
+					label: function (context) {
+						let label = context.dataset.label || '';
+
+						if (label) {
+							label += ': ';
+						}
+						if (context.parsed.y !== null) {
+							switch (context.parsed.y) {
+								case 1:
+									label += 'Beginner';
+									break;
+								case 2:
+									label += 'Intermediate';
+									break;
+								case 3:
+									label += 'Advanced';
+									break;
+								case 4:
+									label += 'Native';
+									break;
+								default:
+									label += 'Unknown';
+							}
+						}
+						return label;
+					}
+				}
 			}
 		}
 	};
@@ -216,9 +244,9 @@
 	<h2 class="text-4xl text-black font-black uppercase">About</h2>
 	<p class="text-justify mt-3">
 		Hey, my name is <b class="font-semibold">{data.firstname} {data.lastname}</b> and I use
-		<b class="font-semibold">{data.username}</b> as my nickname across social medias. I enjoy creating things
-		that live on the internet. My interest in web development started back in 2008 when I decided to
-		try creating my own website on uCoz CMS — turns out hacking template taught me a alot about HTML,
+		<b class="font-semibold">{data.username}</b> as my nickname across social medias. I enjoy creating
+		things that live on the internet. My interest in web development started back in 2008 when I decided
+		to try creating my own website on uCoz CMS — turns out hacking template taught me a alot about HTML,
 		CSS and Javascript.
 	</p>
 	<p class="text-justify mt-3">
@@ -245,7 +273,7 @@
 	</div>
 </section>
 
-<section id="skills" class="mt-20" use:inview={inviewOptions} on:enter={() => inView(1)}>
+<section id="skills" class="mt-24" use:inview={inviewOptions} on:enter={() => inView(1)}>
 	<h2 class="text-4xl text-black font-black uppercase">Skills</h2>
 	<p class="mt-3">
 		There are some list of coding languages, frameworks and tools I know that I've used at least
@@ -279,7 +307,7 @@
 	<div><BarChart data={languageChartData} options={languageChartOptions} /></div>
 </section>
 
-<section id="achievements" class="mt-20" use:inview={inviewOptions} on:enter={() => inView(2)}>
+<section id="achievements" class="mt-24" use:inview={inviewOptions} on:enter={() => inView(2)}>
 	<h2 class="text-4xl text-black font-black uppercase">Achievements</h2>
 	<p class="mt-3">A list of my best remembered achievements</p>
 	<div class="mt-3 pl-3">
@@ -287,7 +315,7 @@
 	</div>
 </section>
 
-<section id="contact" class="mt-20" use:inview={inviewOptions} on:enter={() => inView(3)}>
+<section id="contact" class="mt-24" use:inview={inviewOptions} on:enter={() => inView(3)}>
 	<h2 class="text-4xl text-black font-black uppercase">Contact</h2>
 	<p class="text-justify mt-3">
 		Although I'm not currently looking for any new opportunities, my inbox is always open. Whether
