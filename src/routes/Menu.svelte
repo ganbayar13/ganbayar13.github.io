@@ -64,9 +64,9 @@
 
 <style lang="scss">
 	ul.menu {
-		@apply w-full list-none flex justify-between overflow-x-auto scroll-smooth;
+		@apply w-full list-none flex justify-between overflow-x-auto overflow-y-hidden scroll-smooth;
 		@screen md {
-			@apply block px-0;
+			@apply block px-0 overflow-visible;
 		}
 		& > li.menu-item {
 			@apply relative w-full;
