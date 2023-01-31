@@ -64,7 +64,7 @@
 
 <style lang="scss">
 	ul.menu {
-		@apply w-full list-none flex justify-between;
+		@apply w-full list-none flex justify-between overflow-x-auto scroll-smooth;
 		@screen md {
 			@apply block px-0;
 		}
