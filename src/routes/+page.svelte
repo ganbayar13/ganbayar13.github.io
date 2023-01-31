@@ -207,7 +207,7 @@
 		rootMargin: '-30% 0px'
 	};
 
-	const age = moment().diff('1992-05-16', 'year');
+	const age = moment().diff(data.birthday, 'year');
 
 	const inView = (i) => currentHash.set(i);
 </script>
@@ -215,8 +215,8 @@
 <section id="about" use:inview={inviewOptions} on:enter={() => inView(0)}>
 	<h2 class="text-4xl text-black font-black uppercase">About</h2>
 	<p class="text-justify mt-3">
-		Hey, my name is <b class="font-semibold">Ganbayar Batkhishig</b> and I use
-		<b class="font-semibold">ganbayar13</b> as my nickname across social medias. I enjoy creating things
+		Hey, my name is <b class="font-semibold">{data.firstname} {data.lastname}</b> and I use
+		<b class="font-semibold">{data.username}</b> as my nickname across social medias. I enjoy creating things
 		that live on the internet. My interest in web development started back in 2008 when I decided to
 		try creating my own website on uCoz CMS — turns out hacking template taught me a alot about HTML,
 		CSS and Javascript.
@@ -228,6 +228,11 @@
 			>Mirai Technologies LLC</a
 		>.
 	</p>
+	<p class="text-justify mt-3">
+		Outside of work, I'm just a dad. In my spare time, I enjoy playing video games. Also, I like
+		sports such as basketball, football, ping-pong, skiing, etc. Recently, I have become interested
+		in photography.
+	</p>
 	<div class="my-5">
 		<Divider text="Basic information" />
 	</div>
@@ -235,7 +240,7 @@
 		<div>Fullname: <b class="font-semibold">Ganbayar Batkhishig</b></div>
 		<div>Nationality: <b class="font-semibold">Mongolia</b></div>
 		<div>Age: <b class="font-semibold">{age}</b></div>
-		<div>Gender: <b class="font-semibold">Male</b></div>
+		<div>Gender: <b class="font-semibold capitalize">{data.gender}</b></div>
 		<div>Marital status: <b class="font-semibold">Married</b></div>
 	</div>
 </section>
