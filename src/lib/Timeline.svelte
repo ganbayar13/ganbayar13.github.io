@@ -7,7 +7,8 @@
 			position: 'Software Engineer',
 			description:
 				"The company established in 2022 with the investment of Shinmei Corporation of Japan. The company's field of activity is outsourcing AI development.",
-			isCurrent: true
+			isCurrent: true,
+			website: 'https://mirai-technologies.com/'
 		},
 		{
 			company: '2nd Community Systems LLC',
@@ -16,7 +17,8 @@
 			position: 'Software Engineer',
 			description:
 				'It is Mongolian outsourcing company with the investment of 2nd Community LLC of Japan.',
-			isCurrent: false
+			isCurrent: false,
+			website: 'https://www.corp.2nd-community.com/'
 		},
 		{
 			company: 'Ezpay LLC',
@@ -24,7 +26,8 @@
 			endDate: '2020/06',
 			position: 'Front-end Developer',
 			description: 'Ezpay LLC is a company sells POS(point of sell) devices in Mongolia.',
-			isCurrent: false
+			isCurrent: false,
+			website: 'https://ezpay.mn/'
 		},
 		{
 			company: 'GeniuneCPro LLC',
@@ -77,6 +80,26 @@
 			<p class="ext-base font-normal text-gray-500">
 				{item.description}
 			</p>
+			{#if item.website}
+				<a
+					target="_blank"
+					href={item.website}
+					class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700 mt-4"
+					><svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+						class="w-3 h-3 mr-1"
+					>
+						<path
+							d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"
+						/>
+						<path
+							d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"
+						/>
+					</svg>Website
+				</a>
+			{/if}
 		</li>
 	{/each}
 </ol>
