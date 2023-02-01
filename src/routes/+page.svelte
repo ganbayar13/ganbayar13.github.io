@@ -107,6 +107,8 @@
 	};
 
 	const skillChartOptions = {
+		maintainAspectRatio: true,
+		responsive: true,
 		scales: {
 			r: {
 				min: 0,
@@ -167,6 +169,8 @@
 	};
 
 	const languageChartOptions = {
+		maintainAspectRatio: true,
+		responsive: true,
 		indexAxis: 'x',
 		scales: {
 			y: {
@@ -264,7 +268,7 @@
 	<div class="my-5">
 		<Divider text="Basic information" />
 	</div>
-	<div class="columns-2">
+	<div class="columns-1 md:columns-2">
 		<div>Fullname: <b class="font-semibold">Ganbayar Batkhishig</b></div>
 		<div>Nationality: <b class="font-semibold">Mongolia</b></div>
 		<div>Age: <b class="font-semibold">{age}</b></div>
