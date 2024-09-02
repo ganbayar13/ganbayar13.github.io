@@ -255,10 +255,7 @@
 	</p>
 	<p class="text-justify mt-3">
 		Fast-forward to today, and I've had the privilege of working at an media agency, a start-up, and
-		a international huge corporation. Currently, I am working as software engineer at
-		<a href="https://mirai-technologies.com" target="_blank" class="underline font-semibold"
-			>Mirai Technologies LLC</a
-		>.
+		a international huge corporation. Currently, I am working as software engineer in Japan.
 	</p>
 	<p class="text-justify mt-3">
 		Outside of work, I'm just a dad. In my spare time, I enjoy playing video games. Also, I like
