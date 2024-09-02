@@ -1,7 +1,17 @@
 <script>
 	const items = [
 		{
-			company: 'Mirai Technologies LLC',
+			company: 'Shinmei Corporation',
+			startDate: '2024/08',
+			endDate: 'Today',
+			position: 'Software Engineer',
+			description:
+				"At Shinmei, we are committed to support the entire lifecycle of cars and strive to be a pioneer in the future of the automotive industry.",
+			isCurrent: true,
+			website: 'https://www.shinmei.co.jp/'
+		},
+		{
+			company: 'Mirai Technologies',
 			startDate: '2022/01',
 			endDate: 'Today',
 			position: 'Software Engineer',
@@ -11,7 +21,7 @@
 			website: 'https://mirai-technologies.com/'
 		},
 		{
-			company: '2nd Community Systems LLC',
+			company: '2nd Community Systems',
 			startDate: '2020/09',
 			endDate: '2021/12',
 			position: 'Software Engineer',
@@ -21,16 +31,16 @@
 			website: 'https://www.corp.2nd-community.com/'
 		},
 		{
-			company: 'Ezpay LLC',
+			company: 'Ezpay',
 			startDate: '2020/01',
 			endDate: '2020/06',
 			position: 'Front-end Developer',
-			description: 'Ezpay LLC is a company sells POS(point of sell) devices in Mongolia.',
+			description: 'Ezpay is a company sells POS(point of sell) devices in Mongolia.',
 			isCurrent: false,
 			website: 'https://ezpay.mn/'
 		},
 		{
-			company: 'GeniuneCPro LLC',
+			company: 'GeniuneCPro',
 			startDate: '2018/09',
 			endDate: '2019/12',
 			position: 'Lead Programmer',
@@ -38,7 +48,7 @@
 			isCurrent: false
 		},
 		{
-			company: 'Interactive Systems LLC',
+			company: 'Interactive Systems',
 			startDate: '2014/06',
 			endDate: '2017/12',
 			position: 'Software Engineer',
