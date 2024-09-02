@@ -385,7 +385,7 @@
 						/>
 					</svg>
 				</div>
-				<div class="grow font-semibold">Somewhere in Ulaanbaatar, Mongolia</div>
+				<div class="grow font-semibold">Toyota, Achi, Japan</div>
 			</div>
 		</div>
 	</div>
