@@ -2,6 +2,7 @@
 	import '../app.css';
 	import Download from '../lib/download.svelte';
 	import Menu from './Menu.svelte';
+	import Footer from './Footer.svelte';
 	/** @type {import('./$types').PageData} */
 	export let data;
 
@@ -51,6 +52,7 @@
 				<div class="content selection:text-white selection:bg-black">
 					<slot />
 				</div>
+				<Footer />
 			</div>
 		</main>
 	</div>
